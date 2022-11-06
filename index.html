@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=550,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./js.cookie.js"></script>
+<script src="./script.js"></script>
+<html>
+    <title>振り向き計算ツール</title>
+    <link rel="icon" type="image/png" href="./icon.png">
+    <body>
+        <header>
+            Sensi Finder
+        </header>
+        <div class="explain">
+            <p>使い方は感度振り向きのところに数字を入れると、<br>
+                対応する数値が各ゲームのテキストボックスに表示されます。<br>
+                (感度→振り向き、振り向き→感度　両方対応しています)<br>
+                ゲームのテキストボックスをクリックすると感度振り向きにコピーされます。<br>
+                不具合は下の連絡先までお願いします。<br></p>
+            Twitter account :  @pinnjs<a href="https://twitter.com/pinnjs"><img src="https://dohack.jp/wp-content/uploads/2019/05/e87144.jpg" width="15"height="15"></a>
+            <p>Email account : pinnsann@protonmail.com</p>
+        </div>
+        <form name="main-part">
+            <div class="input-form form">
+                <span>感度 振り向き <br><input type="number" name="input" class="enter" oninput="calc();"></span>
+                <span>DPI <br><input type="number" name="dpi" value="" class="enter" oninput="calc();"></span>
+            </div>
+            <div class="response-form form">
+                <div>R6S<br><input type="text" name="siege" class="response" onclick="copy(this.value)" readonly></div>
+                <div>Apex<br><input type="text" name="apex" class="response" onclick="copy(this.value)" readonly></div>
+                <div>MW<br><input type="text" name="mw" class="response" onclick="copy(this.value)" readonly></div>
+                <div>FORTNITE<br><input type="text" name="fortnite" class="response" onclick="copy(this.value)" readonly></div>
+                <div>VALORANT<br><input type="text" name="valo" class="response" onclick="copy(this.value)" readonly></div>
+                <div>CSGO<br><input type="text" name="csgo" class="response" onclick="copy(this.value)" readonly></div>
+                <div>OVERWATCH<br><input type="text" name="over" class="response" onclick="copy(this.value)" readonly></div>
+                <div>IRONSIGHT<br><input type="text" name="iron" class="response" onclick="copy(this.value)" readonly></div>
+                <div>DESTINY2<br><input type="text" name="destiny" class="response" onclick="copy(this.value)" readonly></div>
+            </div>
+        </form>
+    </body>
+</html>

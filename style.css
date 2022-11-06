@@ -1,0 +1,46 @@
+body{
+    min-width: 550px;
+}
+.explain{
+    text-align: center;
+}
+
+header{
+    height: 100px;
+    margin: auto;
+    font-size:80px;
+    text-align:center;
+    font-family: 'Aldrich', sans-serif;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+}
+.input-form{
+    margin-bottom: 10px;
+}
+.response-form{
+    margin-bottom: 10px;
+}
+input.response{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border:1px black solid;
+    background-color: rgb(243, 243, 243);
+    font-size: 20px;
+}
+input.response:focus{
+    outline:solid 2px lightskyblue;
+}
+input.enter{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    border:1px black solid;
+}
+input.enter:focus{
+    outline:solid 2px lightskyblue;
+}
